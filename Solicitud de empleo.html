@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen y Audio Responsivo</title>
+    <style>
+        /* Estilos para hacer la imagen responsiva */
+        img {
+            max-width: 100%;  /* La imagen no se desbordará */
+            height: auto;     /* Mantiene la relación de aspecto */
+        }
+        .audio-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Para una solicitud de empleo</h1>
+
+    <!-- Imagen con ruta relativa -->
+    <div style="text-align: center;">
+        <img src="imagen.jpg" alt="Imagen de ejemplo">
+    </div>
+
+    <br><br>
+
+    <!-- Audio con ruta relativa -->
+    <div class="audio-container">
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+</body>
+</html>
